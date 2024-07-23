@@ -12,10 +12,10 @@ classDiagram
     }
     
     class Account {
-        -String accountNumber
-        -String agencyNumber
-        -float accountBalance
-        -float accountLimit
+        -String numver
+        -String agency
+        -float balance
+        -float limit
     }
     
     class Features {
@@ -24,13 +24,13 @@ classDiagram
     }
     
     class Cards {
-        -String cardNumber
-        -String description
+        -String number
+        -String limit
     }
     
     class News {
-        -String newsIcon
-        -String newDescription
+        -String icon
+        -String description
     }
     
     User "1" *--> "1" Account
