@@ -18,12 +18,12 @@ classDiagram
         -float accountLimit
     }
     
-    class Feature {
+    class Features {
         -String icons
         -String description
     }
     
-    class Card {
+    class Cards {
         -String cardNumber
         -String description
     }
