@@ -1,8 +1,10 @@
 package me.dio.santander_dev_week_java.model;
 
+
 import jakarta.persistence.*;
 
 import java.util.List;
+
 
 @Entity(name = "tb_user")
 public class User {
@@ -24,6 +26,14 @@ public class User {
 
     @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     private List<News> news;
+
+    public Account getAccount() {
+        return account;
+    }
+
+    public void setAccount(Account account) {
+        this.account = account;
+    }
 
     public Long getId() {
         return id;
